@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoList App</title>
+    <!-- External style sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main Container of the Todo List -->
+    <div class="maincontainer"> 
+            <h2 id="headerstatement">Your Todo List</h2>
+            <!-- Input form to enter each todo -->
+            <form id="inputNewItem">
+                <input type="text" id="entertask" class="inputprop" placeholder="Whats on your mind?">
+                <button type="submit" id="sub-new" class="btn">Add New</button>
+            </form>
+            <div id="displayTasks">
+            </div>
+    </div>
+    <!-- External javascript file -->
+    <script src="app.js"></script>
+</body>
+</html>

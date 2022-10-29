@@ -1,0 +1,81 @@
+:root{
+   --bg-color:#575c58; 
+    --main-bg-color:rgb(247, 240, 240);
+    --btn-bgcolor:transparent;
+    --color-success:green;
+    --color-danger:red;
+}
+*{
+    font-family:sans-serif;
+}
+body{
+    background-color: var(--bg-color);
+}
+
+.maincontainer{
+    display:flex;   
+    flex-direction:column;
+    width:40em;
+    margin:0 auto;
+    background-color: var(--main-bg-color);
+    border-radius: 1.2rem;
+}
+#headerstatement{
+    text-align: center;
+}
+#inputNewItem{
+    margin-bottom:3rem;
+    /* display:flex;
+    justify-content: space-evenly; */
+    margin-left:4rem;
+}
+#inputNewItem > #sub-new{
+    margin:0 1.5rem;
+}
+.inputprop{
+    width:20rem;
+    padding:0.6rem;
+    border-radius: 1rem;
+}
+.boxtype{
+    border-radius:0.5rem;
+    margin-bottom:2rem;
+}
+#displayTasks{
+    margin:0 4rem;
+}
+.btns{
+    display:inline;
+    margin-left:2rem;
+}
+.btn{
+    border:0.1px;
+    border-style:groove;
+    border-radius: 0.2rem;
+    font-weight: 600;;
+}
+#sub-new,.edit-task{
+    color:var(--color-success);
+    
+}
+.delete-task{
+    color:var(--color-danger);
+}
+@media screen and (max-width:650px){
+    .maincontainer{
+        width:30rem;
+    }
+    #inputNewItem{
+        margin: 0 1rem;
+        margin-bottom: 3rem;
+    }
+    #inputNewItem > #sub-new{
+        margin:0 0.5rem;
+    }
+    #displayTasks{
+        margin:0 1rem;
+    }
+    .btns{
+        margin-left:0.5rem;
+    }
+}
